@@ -21,4 +21,4 @@ El gráfico deberá ser un gráfico de barras en donde se agruparán 3 barras:
 • Mayores de 35.
 En el eje Y se marcarán la cantidad de personas en el grupo, y en el eje X el 
 
-Integrantes : Tomas Alvarez - Noelia Mustaff -  Joaquin Delacruz
+Integrantes : Tomas Alvarez - Noelia Mustaff -  Joaquin De La Cruz

@@ -96,18 +96,21 @@ int  buscardni (EPersona lista [ 20 ])
     posición de retorno ;
 }
 
-void  baja (EPersona lista [ 20 ])
+void baja(EPersona lista[20])
 {
-    int posicion = buscardni (lista);
+    int posicion = buscardni(lista);
 
-    si (posicion! = - 1 )
+    if (posicion != -1)
     {
-        lista [posición]. estado = BORRADO;
-        printf (VERDE " El contacto se dio de baja correctamente! \ n " RESET);
+        strcpy(lista[posicion].nombre, "Vacio");
+        lista[posicion].edad = 0;
+        lista[posicion].dni = 0;
+        lista[posicion].estado = BORRADO;
+        printf(GREEN "El contacto se dio de baja correctamente!\n" RESET);
     }
-    demás
+    else
     {
-        printf (RED " No se encuentra el contacto \ n " RESET);
+        printf(RED "No se encuentra el contacto\n" RESET);
     }
 }
 

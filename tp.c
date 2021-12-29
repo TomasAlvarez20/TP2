@@ -1,66 +1,63 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <windows.h>
-#include "funcioness.h"
-#include<iostream>
+# incluye  < stdio.h >
+# incluye  < stdlib.h >
+# incluye  < string.h >
+# incluir  < windows.h >
+# incluir  " funciones.h "
 
+# definir  MAX  20
+# definir  VACIO  0
+# definir  ACTIVO  1
+# definir  BORRADO  2
 
+# definir  ROJO  " \ x1b [31m "
+# define  AMARILLO  " \ x1b [33m "
+# definir  VERDE  " \ x1b [32m "
+# define  AZUL  " \ x1b [34m "
+# define  CYAN  " \ x1b [36m "
+# define  MAGENTA  " \ x1b [35m "
+# definir  RESET  " \ x1b [0m "
 
-#define MAX 20
-#define VACIO 0
-#define ACTIVO 1
-#define BORRADO 2
-
-#define RED "\x1b[31m"
-#define YELLOW "\x1b[33m"
-#define GREEN "\x1b[32m"
-#define BLUE "\x1b[34m"
-#define CYAN "\x1b[36m"
-#define MAGENTA "\x1b[35m"
-#define RESET "\x1b[0m"
-
-int main()
+int  main ()
 {
-    EPersona lista[20];
-    EPersona listaaux[20];
-    init(lista);
+    EPersona lista [ 20 ];
+    EPersona listaaux [ 20 ];
+    init (lista);
 
-    char seguir = 's';
-    int opcion = 0;
+    char seguir = ' s ' ;
+    int opcion = 0 ;
 
-    while (seguir == 's')
+    mientras (seguir == ' s ' )
     {
-        printf(CYAN "------------------------------------------------ \n" RESET);
-        printf(CYAN "|---> BIENVENIDO A TU AGENDA CODIFICADA :3 <---| \n" RESET);
-        printf(CYAN "------------------------------------------------ \n \n" RESET);
+        printf (CYAN " ---------------------------------------------- - \ n " RESET);
+        printf (CYAN " | ---> BIENVENIDO A TU AGENDA CODIFICADA: 3 <--- | \ n " RESET);
+        printf (CYAN " ---------------------------------------------- - \ n  \ n " REINICIAR);
 
-        printf(RED "1- Agregar persona\n" RESET);
-        printf(YELLOW "2- Borrar persona\n" RESET);
-        printf(GREEN "3- Imprimir lista ordenada por nombre\n" RESET);
-        printf(BLUE "4- Imprimir grafico de edades\n" RESET);
-        printf(MAGENTA "5- Salir\n\n" RESET);
+        printf (RED " 1- Agregar persona \ n " RESET);
+        printf (AMARILLO " 2- Borrar persona \ n " RESET);
+        printf (VERDE " 3- Imprimir lista ordenada por nombre \ n " RESET);
+        printf (AZUL " 4- Imprimir gráfico de edades \ n " RESET);
+        printf (MAGENTA " 5- Salir \ n \ n " RESET);
 
-        scanf("%d", &opcion);
+        scanf ( " % d " , & opcion);
 
-        switch (opcion)
+        interruptor (opcion)
         {
-        case 1:
-            alta(lista);
-            break;
-        case 2:
-            baja(lista);
-            break;
-        case 3:
-            mostrarOrdenado(lista);
-            break;
-        case 4:
-            imprimirgrafico(lista);
-            break;
-        case 5:
-            seguir = 'n';
-            break;
+        caso  1 :
+            alta (lista);
+            romper ;
+        caso  2 :
+            baja (lista);
+            romper ;
+        caso  3 :
+            mostrarOrdenado (lista);
+            romper ;
+        caso  4 :
+            imprimirgrafico (lista);
+            romper ;
+        caso  5 :
+            seguir = ' n ' ;
+            romper ;
         }
     }
-    return 0;
+    return  0 ;
 }

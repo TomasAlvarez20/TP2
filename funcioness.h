@@ -105,7 +105,7 @@ void baja(EPersona lista[20])
         strcpy(lista[posicion].nombre, "Vacio");
         lista[posicion].edad = 0;
         lista[posicion].dni = 0;
-        lista[posicion].estado = BORRADO;
+        lista[posicion].estado = VACIO;
         printf(GREEN "El contacto se dio de baja correctamente!\n" RESET);
     }
     else
